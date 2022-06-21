@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Pets</title>
+    <meta name="description" content="Cute Pets" />
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="dog, cat, cute, nice" />
+    <meta name="robots" content="noindex" />
+    <meta name="author" content="David Spektorov" />
+    <meta name="pragma" content="no-cache" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body id="petBody">
+    <!-- HEADER STUFF -->
+    <header id="navStuff" class="sciFiBox">
+      <nav class="navGrid">
+        <div class="navBox nbOne">PETS!</div>
+        <div class="navBox nbClickable nbTwo">
+          <a href="index.html">Index</a>
+        </div>
+        <div class="navBox nbClickable nbThree">
+          <a href="resume.html">Resume</a>
+        </div>
+        <div class="navBox nbClickable nbFour">
+          <a href="portfolio.html">Folio</a>
+        </div>
+        <div class="navBox nbClickable nbFive">
+          <a href="biography.html">Bio</a>
+        </div>
+        <div class="navBox nbClickable nbSix"><a href="pets.html">Pets</a></div>
+      </nav>
+    </header>
+    <script src="https://unpkg.com/vue@3.0.2"></script>
+    <div id="app" class="petGrid">
+      <div class="sciFiBox petBox1">
+        <h1 class="petHeading">MY PETS!!!!</h1>
+        <p class="petParagraph">
+          I like animals, but I love pets. Much to the chagrin of my friends, I
+          can't stop talking about them. This is especially true of the family
+          pets. Despite not being the one who picked any of them, I ended up
+          taking care of all of them, a responsibility which I cherish.<br />
+          I think they are cute, and I wanted to show them off to you.
+        </p>
+      </div>
+      <div class="sciFiBox petBox2">
+        <figure>
+          <img
+            class="petImage gerdaImage"
+            id="setOne"
+            @mouseover="hoverOnOne('./resources/images/pets/gerda/gerda_4.jpg')"
+            @mouseleave="hoverOffOne('./resources/images/pets/gerda/gerda_3.jpg')"
+            :src="swapOne"
+            alt="Gerda"
+          />
+        </figure>
+      </div>
+      <div class="sciFiBox petBox3">
+        <h1 class="petHeading">Gerda</h1>
+        <p class="petParagraph">
+          Gertrude, or Gerda as we call her in Russian, is our oldest pet at
+          <span id="gerdasAge">10</span>
+          years old. She is a teacup yorkie, and is roughly about the size of a
+          sneaker on chicken legs. She was selected by my younger sister Eva at
+          a flea market. Despite her size, she is fiesty and protective. If she
+          doesn't like you, she will gnaw on your toes with her two remaining
+          teeth. Or she may sic Ray on you as her bodyguard.
+        </p>
+      </div>
+      <div class="sciFiBox petBox4">
+        <figure>
+          <img
+            class="petImage rayImage"
+            id="setTwo"
+            @mouseover="hoverOnTwo('./resources/images/pets/ray/ray_4.jpg')"
+            @mouseleave="hoverOffTwo('./resources/images/pets/ray/ray_3.jpg')"
+            :src="swapTwo"
+            alt="Ray"
+          />
+        </figure>
+      </div>
+      <div class="sciFiBox petBox5">
+        <h1 class="petHeading">Ray</h1>
+        <p class="petParagraph">
+          Rey, or as we nickname him at home 'Vah-Sya' (its a term of endearment
+          in Russian), is our second oldest pet (<span id="raysAge">7</span>
+          years old), physically though not mentally. He is a German Shephard
+          who my dad selected after our old GS dog 'Kai' died. Rey is a very
+          sweet and playfull dog. Due to a bad experience with daycare in the
+          past, he was left somewhat traumatized. To this day he is very
+          cowardly and unsure of himself, despite being a very big dog. He
+          prefers to lounge around at home, and doesn't like going outside or
+          meeting new people or animals.
+        </p>
+      </div>
+      <div class="sciFiBox petBox6">
+        <figure>
+          <img
+            class="petImage stitchImage"
+            id="setThree"
+            @mouseover="hoverOnThree('./resources/images/pets/stitch/stitch_2.jpg')"
+            @mouseleave="hoverOffThree('./resources/images/pets/stitch/stitch_1.jpg')"
+            :src="swapThree"
+            alt="Stitch"
+          />
+        </figure>
+      </div>
+      <div class="sciFiBox petBox7">
+        <h1 class="petHeading">Stitch</h1>
+        <p class="petParagraph">
+          Stitch, named after the Disney character, is a recent addition to the
+          household at about <span id="catsAge">1</span> years old. He and his
+          buddy Charlie where selected by my youngest sister Maya. A
+          rambunctions clumsy oaf, Stitch is a very friendly and explorative
+          cat. He likes hanging around people, or from the tops of furniture
+          where he knocks things down from because he lacks his kinds normal
+          grace. He is a rescue, so our only guess is he is an egyptian mau.
+        </p>
+      </div>
+      <div class="sciFiBox petBox8">
+        <figure>
+          <img
+            class="petImage charlieImage"
+            id="setFour"
+            @mouseover="hoverOnFour('./resources/images/pets/charlie/charlie_B.jpg')"
+            @mouseleave="hoverOffFour('./resources/images/pets/charlie/charlie_A.jpg')"
+            :src="swapFour"
+            alt="Charlie"
+          />
+        </figure>
+      </div>
+      <div class="sciFiBox petBox9">
+        <h1 class="petHeading">Charlie</h1>
+        <p class="petParagraph">
+          Charlie, named because his coloration makes him look like the big
+          Chaplin himself, was also a recent addition. Also a street cat,
+          Charlie was found alone as a very young kitten. As such he is very
+          much a scaredy cat. It takes allot to gain his trust, but when you do,
+          he is extremly affectionate. He is always found with his adopted
+          brother stitch, and will go nuts if separated from him for more then a
+          few minutes, which I think is pretty rare for cats.
+        </p>
+      </div>
+    </div>
+    <footer id="index_footer">
+      <p>©2022. David Spektorov. All Rights Reserved.</p>
+      <p></p>
+    </footer>
+    <script src="/script.js"></script>
+  </body>
+</html>

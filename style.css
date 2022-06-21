@@ -1,0 +1,295 @@
+/*FONTS*/
+@font-face {
+  font-family: retroBits;
+  src: url(resources/fonts/Press_Start_2P/PressStart2P-Regular.ttf);
+}
+@font-face {
+  font-family: smoothSpace;
+  src: url(resources/fonts/nasalization/nasalization-rg.otf);
+}
+@font-face {
+  font-family: techySpace;
+  src: url(resources/fonts/origin_tech/OriginTech\ personal\ use.ttf);
+}
+@font-face {
+  font-family: minimalSpace;
+  src: url(resources/fonts/space_age/space\ age.ttf);
+}
+@font-face {
+  font-family: simpleSpace;
+  src: url(resources/fonts/space_ranger/spaceranger.ttf);
+}
+
+/* Baseline Stylings */
+
+/* Tags */
+body {
+  background-color: rgb(18, 19, 20);
+  color: rgb(218, 218, 218);
+  font-family: smoothSpace;
+  text-shadow: 0 0 3px #fafafa;
+  background-image: url(/resources/images/backgrounds/cosmos.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ID's */
+
+/* Classes */
+/* Navigation Bar */
+
+.temp {
+  border: 1px solid;
+}
+
+.navGrid {
+  display: grid;
+  grid-template-columns: 3fr 2fr 2fr 2fr 2fr 2fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+.navBox {
+  /* FONT STUFF */
+  text-align: center;
+  font-family: simpleSpace;
+  font-size: max(2.5vw, 10px);
+  /* BORDERS MARGINS & PADDING */
+}
+.nbOne {
+  grid-row: 1/4;
+  font-family: techySpace;
+  font-size: max(4vw, 10px);
+  padding-top: 1.4vw;
+  border-right: 5px solid;
+  background-color: rgba(100, 151, 143, 0.689);
+}
+
+.nbClickable {
+  grid-row: 2/3;
+}
+
+/* SCIFIBOX is for creating the starting template for how the holo-projection boxes are supposed to look*/
+.sciFiBox {
+  border: 4px solid;
+  border-radius: 10px;
+  border-color: rgba(240, 248, 255, 0.823);
+  box-shadow: 0 0 3px #fafafa;
+  background-color: rgba(100, 151, 151, 0.479);
+}
+
+/*Index Stylings*/
+/* ID's */
+#navStuff {
+  font-family: techySpace;
+  text-shadow: 0 0 0px #fafafa;
+  margin-left: 20px;
+  position: fixed;
+  top: 20px;
+  left: 0px;
+  width: 95%;
+  background-color: rgba(100, 151, 151, 0.689);
+}
+
+#indexIntro {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+/* Classes */
+.indexGrid {
+  margin-left: 12px;
+  width: 96.5%;
+  height: auto;
+  margin-top: 150px;
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: 550px 550px;
+  grid-gap: 10px;
+}
+.ibOne {
+  grid-column: 2/5;
+  grid-row: 1/2;
+}
+.ibTwo {
+  margin-top: 50px;
+  margin-bottom: 200px;
+  grid-row: 1/2;
+  grid-column: 6/9;
+}
+.ibThree {
+  grid-column: 1/4;
+  grid-row: 2/3;
+}
+.ibFour {
+  grid-column: 4/7;
+  grid-row: 2/3;
+}
+.ibFive {
+  grid-column: 7/10;
+  grid-row: 2/3;
+}
+.ibHeading {
+  font-size: max(2vw, 10px);
+}
+.ibParagraph {
+  font-size: max(1.5vw, 10px);
+}
+
+.ibImageOne {
+  width: 400px;
+}
+.ibImageTwo {
+  width: 90%;
+  display: block;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ibImageThree {
+  width: 90%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.ibImageFour {
+  width: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*Resume Stylings*/
+
+.resumeGrid {
+  margin-left: 12px;
+  width: 96.5%;
+  height: 1600px;
+  margin-top: 150px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(9, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: 150px;
+}
+.resumeBox {
+  padding-left: 10px;
+  padding-right: 10px;
+  text-shadow: 0 0 2px #fafafa;
+}
+.rBox1 {
+  grid-column: 1/3;
+}
+.rBox2 {
+  grid-column: 1/3;
+}
+.rBox7 {
+  grid-column: 1/3;
+}
+.rBox10 {
+  grid-column: 1/3;
+}
+/* Portfolio */
+.portfolioGrid {
+  margin-left: 12px;
+  width: 96.5%;
+  height: 1740px;
+  margin-top: 150px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-gap: 50px;
+  grid-auto-rows: 150px;
+}
+.pBox1 {
+  padding-left: 10px;
+  padding-right: 10px;
+  text-shadow: 0 0 2px #fafafa;
+  grid-column: 1/3;
+}
+.pImage {
+  height: 20%;
+  display: block;
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+.bioGrid {
+  margin-left: 12px;
+  width: 96.5%;
+  height: 300px;
+  margin-top: 150px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr;
+  grid-gap: 10px;
+  grid-auto-rows: 150px;
+}
+.bioBox1 {
+  grid-column: 2/3;
+}
+.bioBox2 {
+  grid-column: 4/6;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.petGrid {
+  margin-left: 12px;
+  width: 96.5%;
+  height: 1300px;
+  margin-top: 150px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: auto;
+}
+.petBox1 {
+  grid-column: 1/4;
+}
+.petBox3 {
+  grid-column: 2/4;
+}
+.petBox5 {
+  grid-column: 2/4;
+}
+.petBox7 {
+  grid-column: 2/4;
+}
+.petBox9 {
+  grid-column: 2/4;
+}
+.petHeading {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.petParagraph {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.petImage {
+  width: 40%;
+  display: block;
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* In the future I won't use this as it forces a reload. Vue is actually very handy for this. 
+But Im out of time now */
+/* .gerdaImage:hover {
+  content: url(/resources/images/pets/gerda/gerda_4.jpg);
+}
+.rayImage:hover {
+  content: url(/resources/images/pets/ray/ray_4.jpg);
+}
+.stitchImage:hover {
+  content: url(/resources/images/pets/stitch/stitch_2.jpg);
+}
+.charlieImage:hover {
+  content: url(/resources/images/pets/charlie/charlie_B.jpg);
+} */
